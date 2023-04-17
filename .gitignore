@@ -17,3 +17,4 @@
 # misc
 /.idea
 /.cache
+.DS_Store

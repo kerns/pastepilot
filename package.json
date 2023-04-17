@@ -1,5 +1,5 @@
 {
-  "name": "pastepilot",
+  "name": "pastepilot-x",
   "displayName": "PastePilot X",
   "publisher": "kerns",
   "repository": {
@@ -7,12 +7,14 @@
     "url": "https://github.com/kerns/pastepilot"
   },
   "description": "Concatenates multiple files to your clipboard together with an ASCII tree view of your project – creating a single, highly consumable, context for whatever bug you're trying to report or feature you're trying to describe. Loved by humans and AI alike.",
-  "version": "0.1.0",
+  "version": "0.1.2",
+  "icon": "src/pastePilotXIcon.png",
   "engines": {
     "vscode": "^1.77.0"
   },
   "categories": [
-    "Other"
+    "Formatters",
+    "Machine Learning"
   ],
   "activationEvents": [
     "onCommand:extension.pastePilot"
