@@ -1,7 +1,11 @@
 {
   "name": "pastepilot",
   "displayName": "PastePilot X",
-  "publisher": "kernsco",
+  "publisher": "kerns",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kerns/pastepilot"
+  },
   "description": "Concatenates multiple files to your clipboard together with an ASCII tree view of your project – creating a single, highly consumable, context for whatever bug you're trying to report or feature you're trying to describe. Loved by humans and AI alike.",
   "version": "0.1.0",
   "engines": {
