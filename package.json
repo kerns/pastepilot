@@ -6,8 +6,8 @@
     "type": "git",
     "url": "https://github.com/kerns/pastepilot"
   },
-  "description": "Concatenates multiple files to your clipboard with an ASCII tree view of your project, feeding consumable  intelligence to humans and AIs",
-  "version": "0.1.4",
+  "description": "Concatenates multiple files with an ASCII tree view of your project. For humans who need to fix your code and AIs who need to fix theirs.",
+  "version": "0.1.5",
   "keywords": [
     "pastePilot",
     "pastePilot X",
@@ -78,13 +78,13 @@
         },
         "pastePilot.prependFileComment": {
           "type": "string",
-          "default": "/* ========= Begin $path ======== */",
+          "default": "/* --- Begin $path --- */",
           "description": "The opening comment shown at the beginning of every file. Use $path as a placeholder for the file path.",
           "order": 4
         },
         "pastePilot.appendFileComment": {
           "type": "string",
-          "default": "/* ========== End $path ========== */",
+          "default": "/* --- End $path --- */",
           "description": "The closing comment shown at the end of every file. Use $path as a placeholder for the file path.",
           "order": 5
         },

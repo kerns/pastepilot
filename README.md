@@ -1,8 +1,8 @@
 # PastePilot X for Visual Studio Code
 
-PastePilot X is an extension for Visual Studio Code that allows you to combine multiple files into a single, easy-to-read block of text. Additionally, it can generate an ASCII tree view of your project, which can also be included in the final output. The goal of PastePilot X is to create a contextually rich blob of text, easily understood by both humans and artificial intelligence alike.
+PastePilot X is an extension for Visual Studio Code that allows you to combine multiple files into a single, easy-to-read and ready-to-paste blob of text. It can also generate an ASCII tree view of your project, which can be included in the final output. Together, these features offer much needed context for the humans who need to fix your code, and for the AIs who need to fix theirs.
 
-To use it simply select multiple files in the Visual Studio Code explorer sidebar and right-click on one of the selected files. Choose "PastePilot X" from the context menu and the concatenated content will be copied to your clipboard.
+To use it simply select multiple files in the Visual Studio Code explorer sidebar and right-click on one of the selected files. Choose "PastePilot X" from the context menu and the concatenated payload will be copied to your clipboard.
 
 ## Features
 
@@ -51,4 +51,4 @@ Changes to your `.pastepilot.config.js` configuration file require a restart.
 
 ## Feedback
 
-Bugs, ideas, feedback and pull requests are welcome. Please use the [GitHub issue tracker](https://github.com/kerns/pastepilot/issues)
+Bugs, ideas, feedback and pull requests are welcome. Please use the [GitHub issue tracker](https://github.com/kerns/pastepilot/issues).

@@ -64,8 +64,8 @@ function activate(context) {
     const asciiTreePrepend = finalConfig.asciiTreePrepend;
     const asciiTreeMaxDepth = finalConfig.asciiTreeMaxDepth;
     const ignoreFile = finalConfig.ignoreFile;
-    const prependComment = finalConfig.prependComment || '/* ========= Begin $path ======== */';
-    const appendComment = finalConfig.appendComment || '/* ========== End $path ========== */';
+    const prependComment = finalConfig.prependComment || '/* --- Begin $path --- */';
+    const appendComment = finalConfig.appendComment || '/* --- End $path --- */';
 
     let asciiTree = '';
     if (asciiTreePrepend) {
