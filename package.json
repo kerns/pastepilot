@@ -1,0 +1,95 @@
+{
+  "name": "pastepilot",
+  "displayName": "PastePilot X",
+  "publisher": "kernsco",
+  "description": "Concatenates multiple files to your clipboard together with an ASCII tree view of your project – creating a single, highly consumable, context for whatever bug you're trying to report or feature you're trying to describe. Loved by humans and AI alike.",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.77.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.pastePilot"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.pastePilot",
+        "title": "PastePilot X"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "extension.pastePilot",
+          "when": "resource"
+        }
+      ]
+    },
+    "keybindings": [
+      {
+        "command": "extension.pastePilot",
+        "key": "ctrl+alt+shift+p",
+        "mac": "cmd+alt+shift+p",
+        "when": "resource"
+      }
+    ],
+    "configuration": {
+      "title": "PastePilot X",
+      "properties": {
+        "pastePilot.asciiTreePrepend": {
+          "type": "boolean",
+          "default": true,
+          "description": "Prepend an ASCII tree of the directory structure to the copied content.",
+          "order": 1
+        },
+        "pastePilot.asciiTreeMaxDepth": {
+          "type": "number",
+          "default": 5,
+          "description": "The maximum depth of directories to include in the generated ASCII tree.",
+          "order": 2
+        },
+        "pastePilot.ignoreFile": {
+          "type": "string",
+          "default": ".gitignore",
+          "description": "Path to the file containing patterns to exclude from the generated ASCII tree. A .gitignore file is usually ag ",
+          "order": 3
+        },
+        "pastePilot.prependFileComment": {
+          "type": "string",
+          "default": "/* ========= Begin $path ======== */",
+          "description": "The opening comment shown at the beginning of every file. Use $path as a placeholder for the file path.",
+          "order": 4
+        },
+        "pastePilot.appendFileComment": {
+          "type": "string",
+          "default": "/* ========== End $path ========== */",
+          "description": "The closing comment shown at the end of every file. Use $path as a placeholder for the file path.",
+          "order": 5
+        },
+        "pastePilot.playDoneSound": {
+          "type": "boolean",
+          "default": true,
+          "description": "Play a sound when operations are successfully completed and output has been moved to you clipboard.",
+          "order": 6
+        }
+      }
+    }
+  },
+  "scripts": {
+    "prepublishOnly": "vsce package",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/node": "^16.0.0",
+    "@vscode/test-electron": "^2.3.0"
+  },
+  "dependencies": {
+    "archy": "^1.0.0",
+    "directory-tree": "^3.5.0",
+    "play-sound": "^1.1.5"
+  }
+}
