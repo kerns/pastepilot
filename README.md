@@ -14,7 +14,7 @@ To use it simply select multiple files in the Visual Studio Code explorer sideba
 ## Installation
 
 1. Open Visual Studio Code.
-2. Type `ext install kernsco.pastepilot` and press `Enter`.
+2. Open the command palette (Mac: `Cmd+P` / Win: `Ctrl+P`) and type `ext install kerns.pastepilot-x` and press `Enter`, or search for "PastePilot X" in the extensions tab.
 3. Restart Visual Studio Code.
 
 ## Usage
@@ -25,7 +25,7 @@ To use it simply select multiple files in the Visual Studio Code explorer sideba
 
 ## Configuration
 
-Global settings can be configured in Visual Studio Code's settings, under the "PastePilot X" section. Local settings can be configured using a `.pastepilot.config.js` and can be used to override global settings on a per-project basis.
+Global settings can be configured in Visual Studio Code's settings, under the "PastePilot X" section. If you need them, local settings can be configured to override global settings on a per-project basis by way of a `.pastepilot.config.js` placed on the root of your project.
 
 The following settings can be configured:
 
@@ -35,7 +35,7 @@ The following settings can be configured:
 - `prependComment`: Comment to prepend before each file's content
 - `appendComment`: Comment to append after each file's content
 
-A sample `.pastepilot.config.js` file:
+A sample `.pastepilot.config.js` file might look like this:
 
 ```javascript
 module.exports = {
@@ -47,8 +47,8 @@ module.exports = {
 };
 ```
 
-Changes to your .pastepilot.config.js configuration file require a restart.
+Changes to your `.pastepilot.config.js` configuration file require a restart.
 
 ## Feedback
 
-Bugs, ideas, feedback and pull requests are welcome. Please use the [GitHub issue tracker]()
+Bugs, ideas, feedback and pull requests are welcome. Please use the [GitHub issue tracker](https://github.com/kerns/pastepilot/issues)

@@ -6,8 +6,25 @@
     "type": "git",
     "url": "https://github.com/kerns/pastepilot"
   },
-  "description": "Concatenates multiple files to your clipboard together with an ASCII tree view of your project – creating a single, highly consumable, context for whatever bug you're trying to report or feature you're trying to describe. Loved by humans and AI alike.",
-  "version": "0.1.2",
+  "description": "Concatenates multiple files to your clipboard with an ASCII tree view of your project, feeding consumable  intelligence to humans and AIs",
+  "version": "0.1.3",
+  "keywords": [
+    "paste",
+    "copy",
+    "clipboard",
+    "concatenate",
+    "ascii tree",
+    "tree view",
+    "directory",
+    "project",
+    "intelligence",
+    "ai",
+    "openAI",
+    "machine learning",
+    "pastePilot",
+    "pastePilot X",
+    "LLM"
+  ],
   "icon": "src/pastePilotXIcon.png",
   "engines": {
     "vscode": "^1.77.0"
